@@ -5,6 +5,9 @@ function isPrime(n) {
   if (n === 2 || n === 3) {
     return true;
   }
+  if (n % 2 === 0) {
+    return false;
+  }
   for (var i = 3, l = Math.sqrt(n); i <= l; i = i + 2) {
     if (n % i === 0) {
       return false;
